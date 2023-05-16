@@ -128,7 +128,7 @@ a {
   padding: 0.5rem 1.5rem;
 }
 
-@media screen and (min-width 1024px) {
+@media screen and (min-width: 1024px) {
   .badge {
     font-size: 1.5rem;
   }
@@ -161,7 +161,7 @@ a {
   margin-bottom: 1rem;
 }
 
-@media screen and (min-width 1024px) {
+@media screen and (min-widt: 1024px) {
   .list--ticks .list__item {
     padding-left: 0;
   }
@@ -175,7 +175,7 @@ a {
   cursor: pointer;
   font-size: 1.8rem;
   font-weight: 600;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   text-decoration: none;
   text-transform: uppercase;
   white-space: nowrap;
@@ -262,6 +262,7 @@ a {
   border: 0px;
   flex-grow: 1;
   padding: 1.5rem 2rem;
+  width: 0;
 }
 
 .input-group .btn {
@@ -719,8 +720,9 @@ a {
 }
 
 .block-domain__prices {
+  color: var(--color-headings);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 6rem);
   font-size: 2rem;
   font-weight: 600;
@@ -759,6 +761,9 @@ a {
 @media screen and (min-width: 768px) {
   .feature:nth-of-type(even) .feature__content {
     order: 2;
+  }
+  .block-plans .grid--1x3 {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
